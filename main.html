@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="나누리중개사무소의 부동산 및 상권 데이터 분석 서비스입니다. 강동구 거래분석, 강북구 점포분석, 대구시 커피전문점 시계열분석을 확인하세요.">
+  <title>나누리중개사무소 | 데이터로 살펴보는 지역과 상권</title>
+  <style>
+    :root{--navy:#162940;--blue:#2467a3;--sky:#eaf2f8;--text:#1c3046;--muted:#637488;--line:#dce5ed;--bg:#f6f8fb;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;line-height:1.7}
+    a{text-decoration:none;color:inherit}a:focus-visible{outline:3px solid #e5a842;outline-offset:4px;border-radius:8px}
+    .container{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{background:#fff;border-bottom:1px solid var(--line)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:21px;font-weight:800;letter-spacing:-.7px;color:var(--navy)}.brand small{display:block;font-size:11px;color:var(--muted);letter-spacing:.5px;font-weight:600}.navlinks{display:flex;gap:26px;font-size:14px;color:#465a6e;font-weight:700}
+    .hero{background:linear-gradient(115deg,#172b42 0%,#244e73 100%);color:white;padding:83px 0 88px}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;color:#b8dafa;margin:0 0 18px}.hero h1{font-size:clamp(30px,4.5vw,48px);letter-spacing:-2px;line-height:1.35;margin:0 0 20px;font-weight:800}.hero p{font-size:16px;color:#e0eaf3;max-width:675px;margin:0 0 30px}.hero-btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:12px 20px;border-radius:9px;background:white;color:#173b59;font-size:14px;font-weight:800}.hero-btn:hover{background:#e8f2fd}
+    main{padding:62px 0 78px}.section-head{margin-bottom:27px}.tag{display:inline-block;font-size:12px;font-weight:800;color:var(--blue);margin-bottom:7px;letter-spacing:.07em}.section-head h2{font-size:clamp(24px,3vw,32px);margin:0 0 8px;letter-spacing:-1px}.section-head p{color:var(--muted);margin:0;font-size:15px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 6px 18px rgba(19,41,60,.04);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(19,41,60,.11)}.visual{height:118px;display:flex;align-items:center;justify-content:space-between;padding:22px 25px;background:#eaf2f8;color:#185c91}.visual svg{height:59px;width:78px;stroke:currentColor}.visual .number{font-size:12px;font-weight:800;letter-spacing:.1em;align-self:flex-start;opacity:.78}.card:nth-child(2) .visual{background:#e9f3f0;color:#267668}.card:nth-child(3) .visual{background:#f0edf9;color:#6851a0}.content{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:26px}.category{font-size:12px;font-weight:800;color:var(--blue);margin:0 0 9px}.card h3{font-size:21px;line-height:1.45;letter-spacing:-.7px;margin:0 0 10px}.card p{font-size:14px;color:var(--muted);margin:0 0 25px;flex:1}.go{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:800;color:#16639b}.go span{font-size:18px}.about{background:#fff;border:1px solid var(--line);border-radius:16px;margin-top:60px;padding:34px 39px;display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center}.about .label{font-size:13px;color:var(--blue);font-weight:800}.about h2{font-size:24px;letter-spacing:-.8px;margin:7px 0 0;line-height:1.35}.about p{color:#50647a;margin:0;font-size:15px;line-height:1.95}footer{border-top:1px solid var(--line);padding:25px 0;background:#fff;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:780px){.cards{grid-template-columns:1fr;gap:14px}.visual{height:90px}.about{grid-template-columns:1fr;padding:26px;gap:12px;margin-top:43px}.hero{padding:65px 0}.nav{min-height:72px}.navlinks{gap:14px;font-size:12px}.brand{font-size:18px}main{padding:45px 0 60px}}
+    @media(max-width:410px){.container{width:calc(100% - 28px)}.navlinks{gap:10px}.brand{font-size:16px}.navlinks a{font-size:11px}.hero h1{letter-spacing:-1px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav"><a class="brand" href="main.html" aria-label="나누리중개사무소 메인페이지">나누리중개사무소<small>DATA INSIGHT</small></a><nav class="navlinks" aria-label="주 메뉴"><a href="#dashboards">분석 대시보드</a><a href="#about">사무소 소개</a></nav></div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">NANURI REAL ESTATE · DATA DASHBOARD</p>
+      <h1>지역을 이해하는 데이터,<br>더 나은 선택의 시작</h1>
+      <p>나누리중개사무소는 부동산 거래정보와 지역 상권 데이터를 알기 쉽게 분석하고 시각화하여 지역을 이해하는 데 도움이 되는 정보를 제공합니다.</p>
+      <a class="hero-btn" href="#dashboards">분석 대시보드 둘러보기 <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <main class="container">
+    <section id="dashboards" aria-labelledby="dash-title">
+      <div class="section-head"><span class="tag">DATA SERVICES</span><h2 id="dash-title">지역별 분석 대시보드</h2><p>원하는 분석을 선택하면 상세 대시보드로 이동합니다.</p></div>
+      <div class="cards">
+        <a class="card" href="gangdong1.html" aria-label="강동구 부동산 거래 분석 대시보드 열기">
+          <div class="visual"><span class="number">01 / REAL ESTATE</span><svg viewBox="0 0 90 70" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 59h72M16 59V28l16-10 16 10v31M48 59V13h26v46M57 23h7M57 34h7M57 45h7M26 38h10M26 48h10"/></svg></div>
+          <div class="content"><div class="category">강동구 · 부동산 실거래</div><h3>부동산 거래 분석</h3><p>행정동별 거래량과 매매·전세 구성, 실거래가 지표를 비교해 지역별 거래 특성을 살펴봅니다.</p><span class="go">대시보드 바로가기 <span aria-hidden="true">→</span></span></div>
+        </a>
+        <a class="card" href="gangbuk1.html" aria-label="강북구 동선별 점포 분석 대시보드 열기">
+          <div class="visual"><span class="number">02 / STORE</span><svg viewBox="0 0 90 70" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 30h62l-6-17H20zM17 30v29h56V30M27 59V41h15v18M53 41h12v10H53zM14 30c0 8 12 8 12 0 0 8 12 8 12 0 0 8 12 8 12 0 0 8 12 8 12 0 0 8 14 8 14 0"/></svg></div>
+          <div class="content"><div class="category">강북구 · 동선별 점포</div><h3>상권·점포 분석</h3><p>동선별 점포수, 업종 구성, 층별 분포와 점포 위치를 확인해 상권 특성을 비교합니다.</p><span class="go">대시보드 바로가기 <span aria-hidden="true">→</span></span></div>
+        </a>
+        <a class="card" href="daegu1.html" aria-label="대구시 커피전문점 시계열 분석 대시보드 열기">
+          <div class="visual"><span class="number">03 / TIME SERIES</span><svg viewBox="0 0 90 70" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13v47h72M17 48l16-15 15 8 14-22 15-7"/><circle cx="17" cy="48" r="3" fill="currentColor" stroke="none"/><circle cx="33" cy="33" r="3" fill="currentColor" stroke="none"/><circle cx="48" cy="41" r="3" fill="currentColor" stroke="none"/><circle cx="62" cy="19" r="3" fill="currentColor" stroke="none"/><circle cx="77" cy="12" r="3" fill="currentColor" stroke="none"/></svg></div>
+          <div class="content"><div class="category">대구시 · 커피전문점 시계열</div><h3>커피전문점 변화 분석</h3><p>2015~2020년 지역별 점포수 변화와 증가·감소 지역을 시계열 그래프로 살펴봅니다.</p><span class="go">대시보드 바로가기 <span aria-hidden="true">→</span></span></div>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="about" aria-labelledby="about-title"><div><span class="label">ABOUT NANURI</span><h2 id="about-title">나누리중개사무소<br>소개</h2></div><p>나누리중개사무소는 부동산에 관한 정보를 보다 쉽고 명확하게 전달하고자 합니다. 거래 데이터와 상권·입지 관련 자료를 분석하고 시각화하여 지역의 특징을 한눈에 확인할 수 있도록 돕겠습니다. 정확한 정보와 신뢰를 바탕으로 고객의 합리적인 부동산 의사결정에 함께하겠습니다.</p></section>
+  </main>
+  <footer><div class="container foot"><span>© <span id="year">2026</span> 나누리중개사무소. All rights reserved.</span><span>부동산·상권 데이터 분석 서비스</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
